@@ -20,8 +20,8 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className=" bg-[#0E2954]  ">
-      <div className="navbar  mx-auto  container text-white">
+    <div className=" bg-[#0E2954] sticky top-0 z-10 backdrop-filter backdrop-blur-lg  bg-opacity-30 border-b border-black-800">
+      <div className="navbar  mx-auto  container text-red-600">
         <div className="navbar-start flex items-center">
           <div className="dropdown inline-block">
             <label tabIndex={0} className="lg:hidden">
@@ -59,8 +59,8 @@ const Navbar = () => {
             <img className="h-1/2" src={navImg} alt="" />
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-lg text-warning">
+        <nav className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 text-lg text-red-700">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -114,7 +114,7 @@ const Navbar = () => {
               </>
             )}
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
   );
